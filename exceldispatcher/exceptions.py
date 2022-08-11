@@ -35,3 +35,9 @@ class FailedOnWriteException(ExcelDispatcherException):
 class FailedOnReadException(ExcelDispatcherException):
     def __init__(self):
         self.message = "Failed to read cell from file."
+
+
+
+class FileException(ExcelDispatcherException):
+    def __init__(self):
+        self.message = "Something goes wrong with the file infos."

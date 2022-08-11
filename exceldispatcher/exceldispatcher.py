@@ -73,23 +73,32 @@ class ExcelDispatcher:
 
     # get the current workbook name
     def get_workbook_name(self) -> str:
-        return self.workbook.Name
+        if self.workbook:
+            return self.workbook.Name
+        else:
+            return ""
 
     # get the current workbook path
     def get_workbook_dir(self) -> str:
-        return self.workbook.Path
+        if self.workbook:
+            return self.workbook.Path
+        else:
+            return ""
 
     # get the current worksheet complete path with name
     def get_workbook_path(self) -> str:
-        return self.workbook.Path + "\\" + self.workbook.Name
+        if self.workbook and self.worksheet:
+            return self.workbook.Path + "\\" + self.workbook.Name
+        else:
+            return ""
 
 
     # get the current worksheet name
     def get_worksheet_name(self) -> str:
-        return self.worksheet.Name
-
-
-
+        if self.worksheet:
+            return self.worksheet.Name
+        else:
+            return ""
 
 
     def list_worksheets(self) -> list:

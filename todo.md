@@ -1,6 +1,6 @@
 ## todos
 --- check write cell function [OK]
---- add exceptions to secondary functions [OK, generic exception ExcelDispathcerException]
+--- add exceptions to secondary functions [OK, exceptions in file]
 --- check base report (write permission denied) [OK, just windows permission]
 - get value function to do
 - git init (private to opencontact repo)
