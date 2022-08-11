@@ -102,7 +102,10 @@ class ExcelDispatcher:
 
 
     def list_worksheets(self) -> list:
-        return [sheet.Name for sheet in self.workbook.Worksheets]
+        if self.workbook:
+            return [sheet.Name for sheet in self.workbook.Worksheets]
+        else:
+            return []
 
 
     def close_and_quit(self):
