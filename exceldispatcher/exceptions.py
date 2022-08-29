@@ -44,6 +44,7 @@ class NoWorkspaceException(ExcelDispatcherException):
         self.message = "You must open a workbook and a worksheet before you can use it"
 
 
+
 class FailedOnReadException(ExcelDispatcherException):
 
     def __init__(self, row: int, column: int):
