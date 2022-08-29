@@ -1,4 +1,4 @@
-# Excel Dispatcher
+# Python Excel Dispatcher
 Yet another _minimal_ excel file manipulator, written in Python for Python.
 
 ### Requires
