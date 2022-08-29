@@ -1,2 +1,0 @@
-START_COL = 3
-START_ROW = 12
